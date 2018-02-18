@@ -20,6 +20,7 @@
 import fcntl, socket, struct
 import argparse
 import logging
+from scapy.all import *
 
 # https://stackoverflow.com/questions/159137/getting-mac-address
 def getHwAddr(ifname):
@@ -28,7 +29,6 @@ def getHwAddr(ifname):
     return ':'.join(['%02x' % ord(char) for char in info[18:24]])
 
 def packetLoop(iface, reply_mac, responder_address):
-  from scapy.all import *
   logging.info("Starting packet poll loop")
 
   while True:
