@@ -17,7 +17,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-from scapy.all import *
 import fcntl, socket, struct
 import argparse
 import logging
@@ -29,6 +28,7 @@ def getHwAddr(ifname):
     return ':'.join(['%02x' % ord(char) for char in info[18:24]])
 
 def packetLoop(iface, reply_mac, responder_address):
+  from scapy.all import *
   logging.info("Starting packet poll loop")
 
   while True:

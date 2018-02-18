@@ -64,3 +64,7 @@ optional arguments:
 ```
 
 In the simple case we just run something like `arpreply -i eth0 -a 192.168.1.10`.
+
+## Archlinux package
+
+An archlinux package is available! Please check out https://aur.archlinux.org/packages/arpreply-git .
