@@ -18,7 +18,7 @@ receive packets destinated to it.
 
 ## Use case: Forward connections to remote L3 VPN client
 
-Supposing we have a VPN server (10.7.0.1) on a local network 192.168.1.0/24 and we are connecting
+Supposing we have a VPN server (10.0.0.1) on a local network 192.168.1.0/24 and we are connecting
 to it remotely with our client whose ip on the VPN is 10.0.0.2.
 
 We want the clients on the network 192.168.1.0/24 to reach our 10.0.0.2 client.
